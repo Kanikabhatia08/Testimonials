@@ -2,6 +2,7 @@ import React from 'react'
 import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
 
 
+
 export const Card = (props) => {
     let review = props.review;
   return (
@@ -12,40 +13,26 @@ export const Card = (props) => {
         </div>
 
         <div className='text-center mt-7'>
-            <p className='font-bold text-2xl capitalize'>{review.name}</p>
+            <p className='font-bold text-2xl capitalize tracking-wide'>{review.name}</p>
         </div>
 
-        <div>
-            <p>{review.job}</p>
+        <div className='text-center'>
+            <p className='text-violet-300 uppercase text-sm'>{review.job}</p>
         </div>
 
-        <div>
+        <div className='text-violet-400 mx-auto mt-5'>
             <FaQuoteLeft/>
         </div>
 
-        <div>
+        <div className='text-center mt-4 text-slate-500'>
             {review.text}
         </div>
 
-        <div>
+        <div className='text-violet-400 mx-auto mt-5'>
             <FaQuoteRight />
         </div>
 
-        <div>
-            <button>
-                +
-            </button>
-            <button>
-                *
-            </button>
-
-        </div>
-
-        <div>
-            <button>
-                Surprise Me
-            </button>
-        </div>
+        
     </div>
   )
 }
