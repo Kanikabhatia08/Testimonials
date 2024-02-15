@@ -3,8 +3,8 @@ import { Card } from './Card';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useState } from 'react';
 
-export const Testimonials = (props) => {
-    let reviews = props.reviews;
+export const Testimonials = ({reviews}) => {
+    // let reviews = props.reviews;
     const [index, setIndex] = useState(0);
 
     function leftShiftHandler(){
